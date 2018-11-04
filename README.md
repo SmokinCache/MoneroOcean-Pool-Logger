@@ -1,0 +1,1 @@
+# MoneroOcean Pool Logger
