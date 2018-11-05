@@ -6,10 +6,11 @@ This powershell script logs the global data from https://MoneroOcean.stream (MO)
 The logger creates a .csv file with the followning column order:
 ("timeStamp, amtdue, amtpaid, totalhashes, lasthash, validshares, invalidshares")
 
-Here is a sample row from the log. 
+Here is a sample row from the log.
+ 
 2018-11-04_21:27:54, 3.264402244207, 3.234001479599, 4, 103855608034, 1541384795, 295620, 11
 
-Thanks to Bathmat for help on the amount decimal placement. They have written a simular shell script for lagging
+Thanks to Bathmat for help on the amount decimal placement. They have written a simular shell script for logging
 located at https://github.com/Bathmat/MO-stats
 
 # Usage
