@@ -20,15 +20,17 @@
 ######## User entered variables ########
 ########################################
 
-# Enter miner address here between quotes. 
+#All entered information must remain in the quotes as shown.
+
+# Enter miner address here between quotes. This is the payment address used when mining at MO.
 $mineraddress = "ADD ADDRESS HERE"
-# Enter desired logfile path and name here between quotes !!!ENSURE PATH EXSISTS!!! Script will fail if path does not exist.
+# Enter desired logfile path. !!!ENSURE PATH EXSISTS!!! Script will fail if the path does not exist.
 # The log name will be appended with the date data based on the log file length variable setting. 
 $logpath = "c:\poollogs\"
 $logname = "poollog"
 #Enter log frequecy in seconds 3600 seconds = 1 hour, 86400 seconds = 1 day
 $logfreq = "3600"
-#Log file length before creating a new file. Enter "D" for Daily log or Y" for yearly log files. Defaults to Monthly log files
+#Log file length before creating a new file. Enter "D" for Daily log or "Y" for yearly log files. Defaults to Monthly log files
 $lognew = "M"
 
 # Columns are as follows ("timeStamp, amtdue, amtpaid, totalhashes, lasthash, validshares, invalidshares")
@@ -77,8 +79,8 @@ do {
         $totalhashes = $data.totalHashes
         $validshares = $data.validShares
         $invalidshares = $data.invalidShares
-        $amtpaid = $data.amtPaid
-        $amtdue = $data.amtDue
+        $amtpaid = $data.amtPaid/1000000000000
+        $amtdue = $data.amtDue/1000000000000
         $txncount = $data.txnCount
     log-Write ("$timeStamp, $amtdue, $amtpaid, $txncount, $totalhashes, $lasthash, $validshares, $invalidshares")
     start-sleep $logfreq
