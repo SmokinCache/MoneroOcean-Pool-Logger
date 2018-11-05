@@ -23,11 +23,12 @@
 # Enter miner address here between quotes. 
 $mineraddress = "ADD ADDRESS HERE"
 # Enter desired logfile path and name here between quotes !!!ENSURE PATH EXSISTS!!! Script will fail if path does not exist.
+# The log name will be appended with the date data based on the log file length variable setting. 
 $logpath = "c:\poollogs\"
 $logname = "poollog"
 #Enter log frequecy in seconds 3600 seconds = 1 hour, 86400 seconds = 1 day
 $logfreq = "3600"
-#Enter "D" for Daily log or Y" for yearly log files. Defaults to Monthly log files
+#Log file length before creating a new file. Enter "D" for Daily log or Y" for yearly log files. Defaults to Monthly log files
 $lognew = "M"
 
 # Columns are as follows ("timeStamp, amtdue, amtpaid, totalhashes, lasthash, validshares, invalidshares")
