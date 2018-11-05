@@ -17,14 +17,23 @@ Create a task in Windows Task Scheduler to run the srcipt on start to ensure the
 Here is a good read on how to create the task. https://community.spiceworks.com/how_to/17736-run-powershell-scripts-from-task-scheduler
 
 Enter miner address here between quotes. This is the payment address used when mining at MO
+
 $mineraddress = "ADD ADDRESS HERE"
+
 Enter desired logfile path. !!!ENSURE PATH EXSISTS!!! Script will fail if path does not exist.
+
 The log name will be appended with the date data based on the log file length variable setting. 
+
 $logpath = "c:\poollogs\"
+
 $logname = "poollog"
+
 Enter log frequecy in seconds 3600 seconds = 1 hour, 86400 seconds = 1 day
+
 $logfreq = "3600"
+
 Log file length before creating a new file. Enter "D" for Daily log or Y" for yearly log files. Defaults to Monthly log files
+
 $lognew = "M"
 
 Powershell 3.0 or later is required
