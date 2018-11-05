@@ -7,7 +7,10 @@ The logger creates a .csv file with the followning column order:
 ("timeStamp, amtdue, amtpaid, totalhashes, lasthash, validshares, invalidshares")
 
 Here is a sample row from the log. 
-2018-11-04_20:38:40, 3263648605382, 3234001479599, 4, 103824009732, 1541381876, 295510, 11
+2018-11-04_21:27:54, 3.264402244207, 3.234001479599, 4, 103855608034, 1541384795, 295620, 11
+
+Thanks to Bathmat for help on the amount decimal placement. They have written a simular shell script for lagging
+located at https://github.com/Bathmat/MO-stats
 
 # Usage
 Edit the User Entered Variables with desired settings. The user must eneter thier wallet address all other setttings can
